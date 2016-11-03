@@ -12,5 +12,22 @@ package com.rectus.binder;
 /*                  Class main                         */
 /*-----------------------------------------------------*/
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
 public class main {
+
+	public static void main(String[] args) {
+
+		try {
+			Robot robot = new Robot();
+
+			// Simulate a key press
+			robot.keyPress(KeyEvent.VK_A);
+			robot.keyRelease(KeyEvent.VK_A);
+
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
 }
